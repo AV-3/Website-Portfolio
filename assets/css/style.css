@@ -1,138 +1,98 @@
-/* FONTS */
+/* IMPORTED FONTS */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
+/* GLOBAL VARIABLES */
 :root {
-/* THEME COLORS */
---dark_darkgray: #141414;
---darkgray: #221f1f;
---lightgray: #221f1f;
---pinkred: #ff006a;
---golden: #ffc400dc;
---main_font: azure;
---passive_font: aqua;
---social_icons: azure;
+    /* THEME COLORS */
+    --nav_darkgray: #191919; /* left navbar gradient */
+    --nav_lightgray: #181515; /* right navbar gradient */
+    --welcome_dark: #181717; /* left page gradient */
+    --welcome_darkblue: #0c0f3b; /* right page gradient */
+    --hover_color: #ff006a;
+    --logo_gold: #ffc400dc;
+    --main_font: azure;
 
+    /* FONT SETTINGS */
+    font-family:'Poppins', sans-serif;
+    font-weight: 400;
+
+    /* PAGE DIMENSIONS */
+    height: 100%;
+    width: 100%;
 }
-
-
 
 html, body {
     margin: 0;
-    height:100%;
-    width:100%;
-    padding:0;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #181717, #0c0f3b);
 }
 
 
 section {
-    
-    height: 500px;
-    background-color: var(--dark_darkgray);
-
-
-
+    /* SETTINGS FOR EACH SECTION OF THE PAGE (about/project sections) */
+    height: 700px;
+    border: solid black 1px;
 }
 
-/* WELCOME SECTION */
+/* -------------------------------------------------------------------------- */
 
-.welcome {
-    height: 1000px;
-    background-color: rgb(27, 3, 25);
-    color:dimgray;
-    font-size: 30px;
-    background-image: linear-gradient(to right, #181717, #0c0f3b);
-    background-size: contain;
-    background-position: center;
-    
-
-
-
-}
-
-/* NAV */
+/* NAVBAR */
 nav {
-    background-image: linear-gradient(to left, #141414, #181515);
+    background-image: linear-gradient(to left, #191919, #181515);
+    overflow: hidden;
+    justify-content: space-between; /* Makes all items spaced. Also moved the right items to the right */
     display: flex;
     height: 75px;
+    width: 100%;
+    align-items: center; /* aligns all items on the navbar to be centered */
 }
 
-ul {
+.logo {
+    background-image: var(--logo_gold);
+    height: 45px;
+    width: 45px;
+    padding-right: 50px;
+    font-size: 20px;
+    display: flex;
+    list-style-type: none;
+}
 
+.nav-list-left {
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.nav-item-left {
+    color: azure;
+    width: 120px;
+    display: flex;
+    margin: auto;
+    transition: all 0.3s ease 0s;
+}
+
+.nav-item-left:hover {
+    color: var(--hover_color);
+
+}
+
+
+.nav-list-right {
     list-style-type: none;
     display: flex;
     font-size: 20px;
 
 }
 
-.logo {
-    background-image: var(--golden);
-    height: 45px;
-    width: 45px;
-    padding-right: 50px;
-
-}
-
-.logo:hover {
-    color: var(--pinkred);
-    
-
-}
-
-li {
-    color: azure;
-    width: 120px;
-    justify-content: space-evenly;
-    display: flex;
-    margin: auto;
-    text-decoration: none;
-    
-
-}
-
-li:hover {
-    color: var(--pinkred);
-
-}
-
-.fa-fighter-jet {
-    color: azure;
-    transform: rotate(270deg);
-    display: flex;
-    margin: 20px;
-    margin-left: 230px;
-    
-    
-
-}
-
-.fa-fighter-jet:hover {
-    color: var(--pinkred);
-
-
-
-}
-
-.social-media-links {
-    color: azure;
-    width: 300px;
-    justify-content: space-around;
-    display: flex;
-    text-decoration: none;
-    margin: auto;
-    padding-left: 400px;
-    font-size: 20px;
-
-
+.nav-list-item-right {
+    display:flex;
+    padding-top: 10px;
 }
 
 .linkedIn {
-    float: left;
     margin: 20px;
-    text-decoration: none;
-    
-
 }
 
 .linkedIn:hover {
@@ -141,12 +101,8 @@ li:hover {
 
 }
 
-.linkedIn:visited {
-    color:azure;
-}
 
 .github {
-    float: right;
     margin: 20px;
 }
 
@@ -156,7 +112,7 @@ li:hover {
 
 }
 .gmail {
-    float: right;
+    padding-right: 30px; /* moves the social media icons to the left */
     margin: 20px;
 
 }
@@ -168,6 +124,29 @@ li:hover {
 }
 
 /* END NAV */
+
+/* -------------------------------------------------------------------------- */
+
+/* WELCOME SECTION */
+
+.welcome {
+
+    height: 100vh;
+    background-color: rgb(25, 3, 25);
+    font-size: 30px;
+    background-image: linear-gradient(to right, #181717, #0c0f3b);
+    background-position: center;
+    background-size: contain;
+
+}
+.utd-link{
+    color: orange;
+}
+
+.utd-link:hover {
+    color: var(--pinkred);
+}
+
 
 .welcome-header {
         display: grid;
@@ -187,7 +166,7 @@ h1{
 
 
 p {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
     color:azure;
     margin: 0;
