@@ -4,204 +4,91 @@
 /* GLOBAL VARIABLES */
 :root {
     /* THEME COLORS */
-    --nav_darkgray: #191919; /* left navbar gradient */
-    --nav_lightgray: #181515; /* right navbar gradient */
-    --welcome_dark: #181717; /* left page gradient */
-    --welcome_darkblue: #0c0f3b; /* right page gradient */
-    --hover_color: #ff006a;
-    --logo_gold: #ffc400dc;
-    --main_font: azure;
+    --nav-primary: #191919; /* left navbar gradient */
+    --nav-secondary: #181515; /* right navbar gradient */
+    --bg-primary: #181717; /* left page gradient */
+    --bg-secondary: #0c0f3b; /* right page gradient */
+    --hover-color: #ff006a;
+    --logo-gold: #ffc400dc;
+    --text-primary: azure;
+}
 
+* {
+    box-sizing: border-box;
+}
+
+html {
     /* FONT SETTINGS */
     font-family:'Poppins', sans-serif;
     font-weight: 400;
-
-    /* PAGE DIMENSIONS */
-    height: 100%;
-    width: 100%;
+    font-size: 18px;
+    color: azure;
 }
 
-html, body {
+body {
     margin: 0;
     padding: 0;
-    text-decoration: none;
-    box-sizing: border-box;
+    position: relative;
     background-image: linear-gradient(to right, #181717, #0c0f3b);
 }
 
-
-section {
-    /* SETTINGS FOR EACH SECTION OF THE PAGE (about/project sections) */
-    height: 700px;
-    border: solid black 1px;
+/* SCROLLBAR SETTINGS */
+body::-webkit-scrollbar {
+    width: 0.25rem;
 }
 
-/* -------------------------------------------------------------------------- */
+body::-webkit-scrollbar-track {
+    background: var(--nav-primary);
+}
+
+body:: -webkit-scrollbar-thumb {
+    background: var(--logo-gold);
+    border-radius: 10px;
+}
+/*--------------------------------------------------------------*/
 
 /* NAVBAR */
-nav {
-    background-image: linear-gradient(to left, #191919, #181515);
-    overflow: hidden;
-    justify-content: space-between; /* Makes all items spaced. Also moved the right items to the right */
+
+nav{
     display: flex;
-    height: 75px;
-    width: 100%;
-    align-items: center; /* aligns all items on the navbar to be centered */
+    margin-top: 1rem;
+    max-height: 3rem;
+    background-image: linear-gradient(to right, #191919, #181515)
 }
 
-.logo {
-    background-image: var(--logo_gold);
+.navbar-items {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    align-content: space-evenly;
+
+}
+
+.navbar-logo {
     height: 45px;
     width: 45px;
-    padding-right: 50px;
-    font-size: 20px;
-    display: flex;
-    list-style-type: none;
-}
-
-.nav-list-left {
-    list-style-type: none;
-    display: flex;
-    font-size: 20px;
-}
-
-.nav-item-left {
-    color: azure;
-    width: 120px;
-    display: flex;
-    margin: auto;
-    transition: all 0.3s ease 0s;
-}
-
-.nav-item-left:hover {
-    color: var(--hover_color);
-
-}
-
-
-.nav-list-right {
-    list-style-type: none;
-    display: flex;
-    font-size: 20px;
-
-}
-
-.nav-list-item-right {
-    display:flex;
-    padding-top: 10px;
-}
-
-.linkedIn {
-    margin: 20px;
-}
-
-.linkedIn:hover {
-    position: relative;
-    bottom: 5px;
-
-}
-
-
-.github {
-    margin: 20px;
-}
-
-.github:hover {
-    position: relative;
-    bottom: 5px;
-
-}
-.gmail {
-    padding-right: 30px; /* moves the social media icons to the left */
-    margin: 20px;
-
-}
-
-.gmail:hover {
-    position: relative;
-    bottom: 5px;
-
-}
-
-/* END NAV */
-
-/* -------------------------------------------------------------------------- */
-
-/* WELCOME SECTION */
-
-.welcome {
-
-    height: 100vh;
-    background-color: rgb(25, 3, 25);
-    font-size: 30px;
-    background-image: linear-gradient(to right, #181717, #0c0f3b);
-    background-position: center;
-    background-size: contain;
-
-}
-.utd-link{
-    color: orange;
-}
-
-.utd-link:hover {
-    color: var(--pinkred);
-}
-
-
-.welcome-header {
-        display: grid;
-        place-items: center;
-        align-content: center;
-        color: white;
-        margin-top: 200px;
-}
-
-h1{
-    
-    font-size: 90px;
-    font-weight: 800;
-    margin: 0;
-
-}
-
-
-p {
     font-size: 25px;
-    font-weight: 500;
-    color:azure;
-    margin: 0;
-    margin-left: 70px;
+    margin: 0em;
+    cursor: pointer;
 }
 
-.button {
-    width: 200px;
-    height: 45px;
-    border-radius: 25px;
-    background-color: #ffc400dc;
-    text-align: center;
-    margin-top: 20px;
+.navbar-toggle {
+    height: 35px;
+    width: 35px;
     font-size: 30px;
-    font-weight: 500;
-    display: inline-block;
+    display:flex;
+    cursor: pointer;
 }
 
-.button:hover {
-    background: linear-gradient(to left, #ff006a 50%, #ffc400dc 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
+.nav-link {
+    text-decoration: none;
 }
 
-
-
-
-
-
-
-
-/* END WELCOME SECTION */
-
-/* ABOUT SECTION */
-
-.about {
-    border: none;
+.link-text {
+    font-size: 14px;
+}
+/*---------------------------------------*/
+/* WELCOME PAGE */
+#welcome-page h1, p {
+    color: orange;
 }
