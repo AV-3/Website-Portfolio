@@ -14,70 +14,56 @@
 }
 
 * {
+    /* CSS RESETS */
+    margin: 0px;
+    padding: 0px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
     box-sizing: border-box;
 }
 
-html {
+html, body {
     /* FONT SETTINGS */
     font-family:'Poppins', sans-serif;
     font-weight: 400;
-    font-size: 18px;
-    color: azure;
-}
+    color: var(--text-primary);
 
-body {
-    margin: 0;
-    padding: 0;
+    /* LAYOUT SETTINGS */
     position: relative;
-    background-image: linear-gradient(to right, #181717, #0c0f3b);
+    width: 100%;
 }
 
 /* SCROLLBAR SETTINGS */
 body::-webkit-scrollbar {
-    width: 0.25rem;
+    width: 0.20rem;
 }
 
-body::-webkit-scrollbar-track {
-    background: var(--nav-primary);
-}
-
-body:: -webkit-scrollbar-thumb {
-    background: var(--logo-gold);
-    border-radius: 10px;
-}
 /*--------------------------------------------------------------*/
 
 /* NAVBAR */
 
 nav{
-    display: flex;
-    margin-top: 1rem;
-    max-height: 3rem;
-    background-image: linear-gradient(to right, #191919, #181515)
+    margin: 35px;
 }
 
 .navbar-items {
     list-style: none;
     display: flex;
-    align-items: center;
-    align-content: space-evenly;
-
+    justify-content: space-between;
 }
 
 .navbar-logo {
     height: 45px;
     width: 45px;
-    font-size: 25px;
-    margin: 0em;
     cursor: pointer;
 }
 
 .navbar-toggle {
-    height: 35px;
-    width: 35px;
-    font-size: 30px;
-    display:flex;
+    height: 45px;
+    width: 45px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .nav-link {
@@ -87,8 +73,59 @@ nav{
 .link-text {
     font-size: 14px;
 }
-/*---------------------------------------*/
-/* WELCOME PAGE */
-#welcome-page h1, p {
-    color: orange;
+
+/* HERO SECTION */
+
+#hero-section {
+ height: 100vh;
+ display: flex;
+ text-align: left;
+ border: solid gold;
+
+
+}
+
+.hero-greeting {
+    margin: 30px;
+}
+
+.hero-greeting h1 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 3.5rem;
+    padding: 10px;
+    border-radius: 10px;
+    border: solid gold;
+}
+
+.hero-greeting p {
+    padding-top: 20px;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+/* ABOUT SECTION */
+
+#about-section {
+    background: linear-gradient(to right, var(--bg-primary), var(--bg-secondary));
+    border: solid gold;
+    height: 60vh;
+}
+
+.about-image-container {
+    width: 100px;
+    height: 100px;
+    border-radius: 80%;
+    overflow: hidden;
+}
+
+.about-image-container img {
+    display: inline;
+    height: 100%;
+    width: auto;
+}
+.about-text {
+    font-size: 20px;
+    padding: auto;
 }

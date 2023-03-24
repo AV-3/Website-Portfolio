@@ -4,33 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link type="text/css" rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="images/av-high-resolution-logo-color-on-transparent-background.png">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/av-high-resolution-logo-color-on-transparent-background.png">
     <title>Portfolio | Alan Velez</title>
     <script defer src="assets/js/main.js"></script> <!-- makes sure html body loads before js-->
 </head>
 <body>
     <noscript><strong>We're sorry but this website requires JavaScript to be enabled. Please enable it to continue.</strong></noscript>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(255,255,255,0.05), rgba(255,255,255,0.1)), url("assets/images/owen-kemp-I8BaNbAd9os-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+    </style>
     <header>
         <nav class="navbar">
             <ul class="navbar-items">
-                <input class="navbar-logo" type="image" src="images/av-high-resolution-logo-color-on-transparent-background.png">
-                <button class="navbar-toggle">
-                    <span>  </span>
-                </button>
+                <input class="navbar-logo" type="image" src="assets/images/av-high-resolution-logo-color-on-transparent-background.png">
+                <input class="navbar-toggle" type="image" src="assets/images/icons8-menu-78.png">
+                    <span></span>
+                </input>
 
             </ul>
         </nav>
     </header>
     <main>
-        <section id="welcome-page">
-            <div class="container">
-                <h1>Hi. I'm Alan Velez</h1>
-                <p>Aspiring software engineer passionate about building software solutions.</p>
+        <section id="hero-section">
+            <div class="hero-greeting">
+                <h1>Alan Velez</h1>
+                <p>Aspiring Software Engineer</p>
             </div>
-
         </section>
-
+        <article id="about-section">
+            <div class="about-image-container">
+                <img src="assets/images/james-lewis-Ors7abEAZq8-unsplash.jpg">
+            </div>
+            <div class="about-text">
+                <p>Software Engineering student at The university of Texas at Dallas eager to build software solutions from web development to embedded software systems and anything in-between.<u/p>
+            </div>
+        </article>
     </main>
 </body>
 </html>
