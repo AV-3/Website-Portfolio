@@ -4,13 +4,12 @@
 /* GLOBAL VARIABLES */
 :root {
     /* THEME COLORS */
-    --nav-primary: #191919; /* left navbar gradient */
-    --nav-secondary: #181515; /* right navbar gradient */
-    --bg-primary: #181717; /* left page gradient */
-    --bg-secondary: #0c0f3b; /* right page gradient */
-    --hover-color: #ff006a;
-    --logo-gold: #ffc400dc;
+    --about-bg-primary: #0d0d0d; /* about section left gradient */
+    --about-bg-secondary:  #803300; /* about section right gradient */
+    --logo-gold: #e68a00; /* similar to logo color */
     --text-primary: azure;
+    --effect-primary: #cc0000; /*for hover effects, gradient */
+    --effect-secondary: #ffc400dc;  /*for hover effects, gradient */
 }
 
 * {
@@ -31,6 +30,7 @@ html, body {
 
     /* LAYOUT SETTINGS */
     position: relative;
+    scroll-behavior: smooth;
     width: 100%;
 }
 
@@ -57,13 +57,29 @@ nav{
     height: 45px;
     width: 45px;
     cursor: pointer;
+    opacity: 1;
+}
+
+.navbar-logo:hover {
+    opacity: 0.5;
+    transition: 0.5s ease;
 }
 
 .navbar-toggle {
     height: 45px;
-    width: 45px;
+    width: 55px;
     cursor: pointer;
     margin-left: auto;
+    border-bottom: solid var(--logo-gold);
+    opacity: 1;
+
+}
+
+.navbar-toggle:hover {
+    opacity: 0.5;
+    transition: 0.5s ease;
+
+
 }
 
 .nav-link {
@@ -77,55 +93,116 @@ nav{
 /* HERO SECTION */
 
 #hero-section {
- height: 100vh;
- display: flex;
- text-align: left;
- border: solid gold;
-
-
+    height: 90vh;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border: solid black; /*delete this*/
 }
 
 .hero-greeting {
-    margin: 30px;
+
 }
 
 .hero-greeting h1 {
     font-size: 56px;
-    font-weight: 500;
-    line-height: 3.5rem;
+    font-weight: 600;
+    line-height: 4rem;
     padding: 10px;
-    border-radius: 10px;
-    border: solid gold;
+    border-bottom: solid var(--logo-gold);
 }
 
 .hero-greeting p {
-    padding-top: 20px;
-    font-size: 20px;
+    padding: 20px;
+    font-size: 23px;
     font-weight: 400;
+    line-height: 1.5rem;
+}
 
+.hero-greeting button {
+    width: 130px;
+    height: 30px;
+    border-radius: 25px;
+    border: solid var(--logo-gold);
+    text-align: center;
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--text-primary);
+    background-color: transparent;
+    outline: none;
+}
+
+.hero-greeting button:hover {
+    background: linear-gradient(to left, var(--effect-secondary) 50%, transparent 50%) right;
+    background-size: 200%;
+    background-position: -200%;
+    transition: 0.8s ease-in-out;
+    background-color: var(--effect-primary);
 }
 
 /* ABOUT SECTION */
 
 #about-section {
-    background: linear-gradient(to right, var(--bg-primary), var(--bg-secondary));
-    border: solid gold;
-    height: 60vh;
+    background: var(--about-bg-secondary);
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-flow: row wrap;
+    overflow: hidden;
+    border: solid azure; /*delete this*/
+
 }
 
 .about-image-container {
-    width: 100px;
-    height: 100px;
-    border-radius: 80%;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
     overflow: hidden;
+    position: relative
+    align-items: center;
+    justify-content: center;
+    margin: 35px;
+    border: solid var(--logo-gold);
+
 }
 
 .about-image-container img {
     display: inline;
-    height: 100%;
     width: auto;
+    flex-shrink: 4;
+    min-width: 100%;
+    min-height: 100%
+
 }
+
 .about-text {
+    font-size: 17px;
+    font-weight: 300;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    border: solid gold; /*delete this */
+}
+
+.about-text h1 {
     font-size: 20px;
-    padding: auto;
+    font-weight: 400;
+}
+
+.about-text p {
+    font-size: 17px;
+    font-weight: 300;
+    text-align: left;
+}
+
+.utd-link {
+    color: orange;
 }
