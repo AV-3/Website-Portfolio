@@ -6,7 +6,7 @@
     /* THEME COLORS */
     --about-bg-primary: #0d0d0d; /* about section left gradient */
     --about-bg-secondary:  #803300; /* about section right gradient */
-    --logo-gold: #e68a00; /* similar to logo color */
+    --logo-color: #e68a00; /* similar to logo color */
     --text-primary: azure;
     --effect-primary: #cc0000; /*for hover effects, gradient */
     --effect-secondary: #ffc400dc;  /*for hover effects, gradient */
@@ -39,6 +39,7 @@ body::-webkit-scrollbar {
     width: 0.20rem;
 }
 
+
 /*--------------------------------------------------------------*/
 
 /* NAVBAR */
@@ -70,7 +71,7 @@ nav{
     width: 55px;
     cursor: pointer;
     margin-left: auto;
-    border-bottom: solid var(--logo-gold);
+    border-bottom: solid var(--logo-color);
     opacity: 1;
 
 }
@@ -99,11 +100,7 @@ nav{
     justify-content: center;
     align-content: center;
     text-align: center;
-    border: solid black; /*delete this*/
-}
-
-.hero-greeting {
-
+    /*border: solid black; /*delete this*/
 }
 
 .hero-greeting h1 {
@@ -111,27 +108,30 @@ nav{
     font-weight: 600;
     line-height: 4rem;
     padding: 10px;
-    border-bottom: solid var(--logo-gold);
+    border-bottom: solid var(--logo-color);
+    text-shadow: var(--about-bg-primary) 1px 0 3px;
 }
 
-.hero-greeting p {
+.hero-greeting h2 {
     padding: 20px;
     font-size: 23px;
     font-weight: 400;
     line-height: 1.5rem;
+    text-shadow: var(--about-bg-primary) 1px 0 3px;
 }
 
 .hero-greeting button {
     width: 130px;
     height: 30px;
     border-radius: 25px;
-    border: solid var(--logo-gold);
+    border: solid var(--logo-color);
     text-align: center;
     font-size: 15px;
     font-weight: 400;
     color: var(--text-primary);
     background-color: transparent;
     outline: none;
+    text-shadow: var(--about-bg-primary) 1px 0 3px;
 }
 
 .hero-greeting button:hover {
@@ -139,7 +139,7 @@ nav{
     background-size: 200%;
     background-position: -200%;
     transition: 0.8s ease-in-out;
-    background-color: var(--effect-primary);
+    background-color: var(--about-bg-primary);
 }
 
 /* ABOUT SECTION */
@@ -153,56 +153,60 @@ nav{
     text-align: center;
     flex-flow: row wrap;
     overflow: hidden;
-    border: solid azure; /*delete this*/
-
-}
-
-.about-image-container {
-    display: flex;
-    width: 250px;
-    height: 250px;
-    border-radius: 100%;
-    overflow: hidden;
-    position: relative
-    align-items: center;
-    justify-content: center;
-    margin: 35px;
-    border: solid var(--logo-gold);
-
-}
-
-.about-image-container img {
-    display: inline;
-    width: auto;
-    flex-shrink: 4;
-    min-width: 100%;
-    min-height: 100%
+    /*border: solid azure; /*delete this*/
 
 }
 
 .about-text {
     font-size: 17px;
     font-weight: 300;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: flex;
     flex-flow: column wrap;
-    align-items: center;
-    justify-content: center;
-    border: solid gold; /*delete this */
+    padding: 1rem;
+    /*border: solid gold; /*delete this */
 }
 
 .about-text h1 {
-    font-size: 20px;
-    font-weight: 400;
+    font-size: 30px;
+    font-weight: 600;
+    margin: 4rem 2.3rem 3rem 2.3rem;
+    border-bottom: solid var(--logo-color);
 }
 
 .about-text p {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 300;
-    text-align: left;
+    /*border: solid gold; /*delete this */
+    line-height: 1.5;
+    word-spacing: 1px;
 }
 
 .utd-link {
     color: orange;
+}
+
+.vet-img-container {
+    display: flex;
+    width: 6rem;
+    height: 6rem;
+    border-radius: 100%;
+    overflow: hidden;
+    position: relative
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+.vet-img-container img {
+    display: inline;
+    width: auto;
+    flex-shrink: 0.4;
+    min-width: 100%;
+    min-height: 100%
+
+}
+
+.vet-text {
+    border: solid azure;
+    margin: 1.3rem;
 }

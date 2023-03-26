@@ -9,11 +9,18 @@
     <title>Portfolio | Alan Velez</title>
     <script defer src="assets/js/main.js"></script> <!-- makes sure html body loads before js-->
 </head>
+
 <body>
     <noscript><strong>We're sorry but this website requires JavaScript to be enabled. Please enable it to continue.</strong></noscript>
     <style>
         body {
             background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("assets/images/philip-oroni-gftMuFt8vNk-unsplash.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+        #about-section {
+            background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("assets/images/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg");
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
@@ -24,9 +31,6 @@
             <ul class="navbar-items">
                 <input class="navbar-logo" type="image" src="assets/images/av-high-resolution-logo-color-on-transparent-background.png">
                 <input class="navbar-toggle" type="image" src="assets/images/icons8-menu-78.png">
-                    <span></span>
-                </input>
-
             </ul>
         </nav>
     </header>
@@ -34,19 +38,26 @@
         <section id="hero-section">
             <div class="hero-greeting">
                 <h1>Alan Velez</h1>
-                <p>Aspiring Software Engineer</p>
+                <h2>Aspiring Software Engineer</h2>
                 <button onclick="location.href='#about-section'" type="button">Learn More</button>
             </div>
         </section>
         <section id="about-section">
-            <div class="about-image-container">
-                <img src="assets/images/jeremy-straub-EQa_98cBWwk-unsplash.jpg">
-            </div>
             <div class="about-text">
-                <h1>Who I Am</h1>
-                <p>Hi, I'm Alan Velez. Air Force veteran and second year Software Engineering student at <a style="text-decoration:none" class="utd-link" href="https://www.utdallas.edu/" target="_blank">The University of Texas at Dallas</a> eager to build software solutions from web applications to embedded software systems.</p>
+                <h1>Nice to meet you.</h1>
+                <p>I'm Alan Velez. A U.S. Air Force veteran and second-year software engineering student at <a style="text-decoration:none" class="utd-link" href="https://www.utdallas.edu/" target="_blank">The University of Texas at Dallas</a> who is passionate about building software solutions from web applications to embedded software systems.</p>
+            </div>
+            <div class="vet-img-container">
+                <img src="assets/images/david-phillips-EHmIHQA7BIk-unsplash.jpg">
+            </div>
+            <div class="vet-text">
+                <p>7.5+ years of logistical experience. Providing analytical expertise, managing resources, and supervising talented teams.</p>
+            </div>
+            <div class="utd-img-container">
 
             </div>
+
+
         </section>
     </main>
 </body>
