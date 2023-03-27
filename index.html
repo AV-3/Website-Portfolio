@@ -10,7 +10,7 @@
     <script defer src="assets/js/main.js"></script> <!-- makes sure html body loads before js-->
 </head>
 
-<body>
+<body onload="document.body.style.opacity='1'">
     <noscript><strong>We're sorry but this website requires JavaScript to be enabled. Please enable it to continue.</strong></noscript>
     <style>
         body {
@@ -18,6 +18,8 @@
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-size: cover;
+            /* opacity: 0;*/
+            /* transition: opacity 2s;*/
         }
         #about-section {
             background-image: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url("assets/images/andrew-kliatskyi-jpu0gMXT9to-unsplash.jpg");
@@ -44,17 +46,23 @@
         </section>
         <section id="about-section">
             <div class="about-text">
-                <h1>Nice to meet you.</h1>
+                <h2>Nice to meet you.</h2>
                 <p>I'm Alan Velez. A U.S. Air Force veteran and second-year software engineering student at <a style="text-decoration:none" class="utd-link" href="https://www.utdallas.edu/" target="_blank">The University of Texas at Dallas</a> who is passionate about building software solutions from web applications to embedded software systems.</p>
             </div>
+            <!-- ------------------------------------------------------------------------- -->
             <div class="vet-img-container">
                 <img src="assets/images/david-phillips-EHmIHQA7BIk-unsplash.jpg">
             </div>
             <div class="vet-text">
-                <p>7.5+ years of logistical experience. Providing analytical expertise, managing resources, and supervising talented teams.</p>
+                <p>More than 7.5 years of experience in the logistics industry has instilled in me the necessary analytical, collaborative, and problem-solving skills to develop clean, organized software.</p>
             </div>
-            <div class="utd-img-container">
-
+            <!-- ------------------------------------------------------------------------- -->
+            <div class="edu-text">
+                <h2>Lifelong Learner</h2>
+                <p>As a sophomore software engineering student...</p>
+            </div>
+            <div class="edu-img-container">
+                <img src="assets/images/512px-UT_Dallas_2_Color_Emblem_-_SVG_Brand_Identity_File.svg.png">
             </div>
 
 
