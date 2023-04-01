@@ -4,10 +4,10 @@
 /* GLOBAL VARIABLES */
 :root {
     /* THEME COLORS */
-    --about-bg-primary: #0d0d0d; /* about section left gradient */
-    --about-bg-secondary:  #803300; /* about section right gradient */
-    --logo-color: #e68a00; /* similar to logo color */
-    --text-primary: azure;
+    --bg-primary: #0d0d0d;
+    --logo-color: #66ffff;
+    --text-primary: #f2f2f2;
+    --text-secondary: #33334d;
     --effect-primary: #cc0000; /*for hover effects, gradient */
     --effect-secondary: #ffc400dc;  /*for hover effects, gradient */
     --button-bg: #1C1B1B;
@@ -33,6 +33,7 @@ html, body {
     position: relative;
     scroll-behavior: smooth;
     width: 100%;
+    background: var(--bg-primary);
 }
 
 /* SCROLLBAR SETTINGS */
@@ -40,9 +41,22 @@ body::-webkit-scrollbar {
     width: 0.20rem;
 }
 
-
 /*--------------------------------------------------------------*/
 
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 770px) {
+    .navbar-toggle {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .hero-greeting h1 {
+        font-size: 100px;
+    }
+}
+/*---------------------------------------------------------*/
 /* NAVBAR */
 
 nav{
@@ -50,7 +64,7 @@ nav{
 }
 
 .navbar-items {
-    list-style: none;
+    list-style-type: none;
     display: flex;
     justify-content: space-between;
 }
@@ -72,8 +86,7 @@ nav{
     width: 55px;
     cursor: pointer;
     margin-left: auto;
-    border-bottom: solid var(--logo-color);
-    opacity: 1;
+    border-bottom: solid var(--logo-color) 1px;    opacity: 1;
 
 }
 
@@ -91,6 +104,7 @@ nav{
 .link-text {
     font-size: 14px;
 }
+/*------------------------------------------------*/
 
 /* HERO SECTION */
 
@@ -109,34 +123,32 @@ nav{
 }
 
 .hero-greeting h1 {
-    font-size: 56px;
+    font-size: 45px;
     font-weight: 600;
     line-height: 4rem;
     padding: 5px;
-    border-bottom: solid var(--logo-color);
-    text-shadow: var(--about-bg-primary) 1px 0 3px;
+    border-bottom: solid var(--logo-color) 1px;
 }
 
 .hero-greeting h2 {
     padding: 15px;
-    font-size: 23px;
+    font-size: 20px;
     font-weight: 400;
-    line-height: 1.5rem;
-    text-shadow: var(--about-bg-primary) 1px 0 3px;
+    line-height: 1rem;
+    color: var(--text-secondary);
 }
 
 .hero-greeting button {
     width: 130px;
     height: 30px;
     border-radius: 25px;
-    border: solid var(--logo-color);
+    border: solid var(--logo-color) 1px;
     text-align: center;
     font-size: 15px;
     font-weight: 400;
     color: var(--text-primary);
     background-color: var(--button-bg);
     outline: none;
-    text-shadow: var(--about-bg-primary) 1px 0 3px;
 }
 
 .hero-greeting button:hover {
@@ -146,6 +158,8 @@ nav{
     transition: 0.8s ease-in-out;
 }
 
+/*----------------------------------------------------*/
+
 /* ABOUT SECTION */
 
 #about-section {
@@ -153,96 +167,80 @@ nav{
     display: flex;
     justify-content: center;
     align-content: center;
-    text-align: center;
-    flex-flow: row wrap;
+    text-align: left;
+    flex-flow: column wrap;
     overflow: hidden;
-    border-top: solid black 1px;
+
     /*border: solid azure; /*delete this*/
 
 }
 
-.about-text {
-    font-size: 17px;
-    font-weight: 300;
+.intro-container {
+    margin: 3rem 1rem 3rem 1rem;
+}
+
+.intro-text {
     flex-flow: column wrap;
     margin: 0 auto;
-    padding: 1.16rem;
+
     /*border: solid gold; /*delete this */
 }
 
-.about-text h2 {
+.intro-text h2 {
     font-size: 30px;
     font-weight: 600;
-    margin: 2rem 2.3rem 3rem 2.3rem;
-    border-bottom: solid var(--logo-color);
+    line-height: 3.5rem;
+    word-spacing: 0px;
 }
 
-.about-text p {
+.intro-text p {
     font-size: 17.5px;
-    font-weight: 300;
+    font-weight: 200;
     /*border: solid gold; /*delete this */
+    padding-top: 1.5rem;
     line-height: 1.5;
     word-spacing: 1px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    text-align: left;
 }
 
-.utd-link {
-    color: orange;
+.intro-utd-link {
+    color: var(--logo-color);
+    text-decoration: none;
 }
 
-.vet-img-container {
+.intro-utd-link:hover {
+    transition: 3s ease;
+    text-decoration: underline var(--logo-color);
+}
+/*-----------------------------------------------*/
+.intro-skills {
     display: flex;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 100%;
-    overflow: hidden;
-    position: relative
-    align-items: center;
-    justify-content: center;
-    margin: 1rem;
-
+    flex-flow: column;
+    align-text: center;
 }
 
-.vet-img-container img {
-    display: inline;
-    width: auto;
-    flex-shrink: 0.4;
-    min-width: 100%;
-    min-height: 100%
-
-}
-
-.vet-text {
-    /*border: solid azure; delete this */
-    margin: 1.3rem;
-}
-
-.vet-text p {
-    font-size: 17.5px;
-    font-weight: 300;
-    /*border: solid gold; /*delete this */
-    line-height: 1.5;
-    word-spacing: 1px;
-}
-
-.edu-text h2 {
+.intro-skills h2 {
     font-size: 30px;
     font-weight: 600;
-    border-bottom: solid var(--logo-color);
-    margin: 2rem;
+    line-height: 3.5rem;
+    word-spacing: 0px;
+    margin-top: 4rem;
 }
 
-.edu-text p {
-    font-size: 17.5px;
-    font-weight: 300;
-    /*border: solid gold; /*delete this */
-    line-height: 1.5;
-    word-spacing: 1px;
+.skills-icons {
+    text-decoration: none;
+    list-style: none;
 }
-.edu-img-container img {
-    display: flex;
-    width: 6rem;
-    height: 6rem;
-    position: relative
-    align-items: center;
-    justify-content: center;
+
+.skills-icons li {
+    opacity: 0.5;
 }
+
+
+
+/* ------------------------------------ */
