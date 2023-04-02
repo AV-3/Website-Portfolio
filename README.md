@@ -2,14 +2,9 @@
 
 Website portfolio by Alan Velez
 
-My first front-end project which I will consistently update with future projects. Originally was going to use Bootstrap and Sass but ultimately I ommitted the use of Bootstrap and Sass in order to better understand the basics of front-end design.
+A simple website portfolio design to showcase my projects and skills. Designed with a mobile-first approach and full responsiveness. This is my first front-end oriented project so the use of frameworks like bootstrap and sass will be omitted for learning purposes.
 
 Languages:
-    HTML
-    CSS
-    JS
-
-Resources:
-	Font Awesome (https://fontawesome.com/icons)
-    Bootstrap Icons (https://icons.getbootstrap.com/)
-    Upsplash Images (https://unsplash.com/)
+HTML
+CSS
+JS

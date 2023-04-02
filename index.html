@@ -1,60 +1,113 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="icon" href="images/av-high-resolution-logo-color-on-transparent-background.png">
-    <title>Portfolio | Alan Velez</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css">
+    <link rel="icon" href="assets/images/av-high-resolution-logo-color-on-transparent-background.png">
+    <title>Alan Velez | Portfolio</title>
     <script defer src="assets/js/main.js"></script> <!-- makes sure html body loads before js-->
 </head>
-<body>
-       <nav>
-            <div class="nav-left">
-                <ul class="nav-list-left">
-                    <li class="logo"><img src="images/av-high-resolution-logo-color-on-transparent-background.png"></li>
-                    <li class="hamburger-toggle"></li>
-                    <li class="nav-item-left">About</li>
-                    <li class="nav-item-left">Projects</li>
-                    <li class="nav-item-left">Contact</li>
-                    <li class="nav-item-left">Resume</li>
-                </ul>
-            </div>
-            
-            <div class="nav-right">
-                <ul class="nav-list-right">
-                    <li class="nav-list-item-right"><a href="https://www.linkedin.com/in/alan-velez-615401220/" class="linkedIn" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gold" class="bi bi-linkedin" viewBox="0 0 16 16">
-                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
-                      </svg>
-                    </a></li>
-                    <li class="nav-list-item-right"><a href="https://github.com/AV-3" class="github" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gold" class="bi bi-github" viewBox="0 0 16 16">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
-                      </svg>
-                    </a></li>
-                    <li class="nav-list-item-right"><a href="mailto:alan.velez.e@gmail.com" class="gmail" target="_blank">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="gold" class="bi bi-envelope" viewBox="0 0 16 16">
-                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"/>
-                      </svg>
-                    </a></li>
-                </ul>
-            </div>
 
-        </nav>
+<body onload="document.body.style.opacity='1'">
+    <noscript><strong>We're sorry but this website requires JavaScript to be enabled. Please enable it to continue.</strong></noscript>
 
-       <section class="welcome">
-        <div class="welcome-header">
-            <h1>Hi. I'm Alan Velez</h1>
-            <p>Air Force veteran and software engineering student at <a style="text-decoration:none" class="utd-link" href="https://www.utdallas.edu/" target="_blank">The University of Texas at Dallas</a> with a passion<br> for building software solutions ranging from web applications to embedded software systems.</p>
-            <div class="button">Learn More</div>
+    <!-- HEADER -->
+    <header>
+        <div class="nav-screen-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M741,116.23C291,117.43,0,27.57,0,6V120H1200V6C1200,27.93,1186.4,119.83,741,116.23Z" class="shape-fill"></path>
+            </svg>
         </div>
-    </section>
+        <nav class="navbar">
+            <ul class="navbar-items">
+                <input class="navbar-logo" type="image" src="assets/images/av_white-logo.png" href="">
+                <input class="navbar-toggle" type="image" src="assets/images/icons8-menu-78_gray.png">
+            </ul>
+        </nav>
+    </header>
+<!----------------->
+    <main>
+        <!-- HERO -->
+        <section id="hero-section">
+            <div class="hero-greeting">
+                <h1>Alan Velez</h1>
+                <h2>Aspiring Software Engineer</h2>
+                <button onclick="location.href='#about-section'" type="button">Learn More</button>
+            </div>
+            <div class="hero-screen-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </section>
 
-    <section></section>
-    <section></section>
-    <section></section>
+        <!-- ABOUT -->
+        <section id="about-section">
+            <div class="intro-container">
+                <div class="intro-text">
+                    <h2>Nice to meet you!</h2>
+                    <p>I'm a US Air Force veteran and software engineering student at <a class="intro-utd-link" href="https://www.utdallas.edu/fact-sheets/ecs/bs-software-engineering/" target="_blank">The University of Texas at Dallas</a> with a passion for embedded systems, full stack development, and machine learning.</p>
+                    <p>Over 7.5 years of experience in logistics has given me the analytical, collaborative, and problem-solving skills required to develop clean and reliable software.</p>
+                    <p>In my spare time, I'm an auto-racing enthusiast who enjoys playing guitar and building personal projects which sometimes involves <a class="intro-design-link" href="#" target="_blank">design work</a>.</p>
+                </div>
+            </div>
+                <!-- SKILLS -->
+            <div class="skills-container">
+                <div class="intro-skills">
+                    <h2>Technical <span style="color: var(--accent-color);">Skills</span></h2>
+                    <ul class="skills-icons">
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify" data-icon="logos:git-icon" data-inline="false" data-width="90px" data-height="90px" style="transform: rotate(360deg);"><path fill="#DE4C36" d="M251.172 116.594L139.4 4.828c-6.433-6.437-16.873-6.437-23.314 0l-23.21 23.21l29.443 29.443c6.842-2.312 14.688-.761 20.142 4.693c5.48 5.489 7.02 13.402 4.652 20.266l28.375 28.376c6.865-2.365 14.786-.835 20.269 4.657c7.663 7.66 7.663 20.075 0 27.74c-7.665 7.666-20.08 7.666-27.749 0c-5.764-5.77-7.188-14.235-4.27-21.336l-26.462-26.462l-.003 69.637a19.82 19.82 0 0 1 5.188 3.71c7.663 7.66 7.663 20.076 0 27.747c-7.665 7.662-20.086 7.662-27.74 0c-7.663-7.671-7.663-20.086 0-27.746a19.654 19.654 0 0 1 6.421-4.281V94.196a19.378 19.378 0 0 1-6.421-4.281c-5.806-5.798-7.202-14.317-4.227-21.446L81.47 39.442L4.83 116.077c-6.44 6.443-6.44 16.884 0 23.322l111.774 111.768c6.435 6.438 16.873 6.438 23.316 0l111.251-111.249c6.438-6.44 6.438-16.887 0-23.324"></path></svg>
+                            <span>Git</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/github.png" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 255">
+                            <span>Github</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="iconify" data-icon="vscode-icons:file-type-html" data-inline="false" data-width="90px" data-height="90px" style="transform: rotate(360deg);"><path fill="#e44f26" d="M5.902 27.201L3.655 2h24.69l-2.25 25.197L15.985 30L5.902 27.201z"></path><path fill="#f1662a" d="m16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path><path fill="#ebebeb" d="M16 13.407h-4.09l-.282-3.165H16V7.151H8.25l.074.83l.759 8.517H16v-3.091zm0 8.027l-.014.004l-3.442-.929l-.22-2.465H9.221l.433 4.852l6.332 1.758l.014-.004v-3.216z"></path><path fill="#fff" d="M15.989 13.407v3.091h3.806l-.358 4.009l-3.448.93v3.216l6.337-1.757l.046-.522l.726-8.137l.076-.83h-7.185zm0-6.256v3.091h7.466l.062-.694l.141-1.567l.074-.83h-7.743z"></path></svg>
+                            <span>HTML</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32" class="iconify" data-icon="vscode-icons:file-type-css" data-inline="false" data-width="90px" data-height="90px" style="transform: rotate(360deg);"><path fill="#1572b6" d="M5.902 27.201L3.656 2h24.688l-2.249 25.197L15.985 30L5.902 27.201z"></path><path fill="#33a9dc" d="m16 27.858l8.17-2.265l1.922-21.532H16v23.797z"></path><path fill="#fff" d="M16 13.191h4.09l.282-3.165H16V6.935h7.75l-.074.829l-.759 8.518H16v-3.091z"></path><path fill="#ebebeb" d="m16.019 21.218l-.014.004l-3.442-.93l-.22-2.465H9.24l.433 4.853l6.331 1.758l.015-.004v-3.216z"></path><path fill="#fff" d="m19.827 16.151l-.372 4.139l-3.447.93v3.216l6.336-1.756l.047-.522l.537-6.007h-3.101z"></path><path fill="#ebebeb" d="M16.011 6.935v3.091H8.545l-.062-.695l-.141-1.567l-.074-.829h7.743zM16 13.191v3.091h-3.399l-.062-.695l-.14-1.567l-.074-.829H16z"></path></svg>
+                            <span>CSS</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 256" class="iconify" data-icon="logos:javascript" data-inline="false" data-width="90px" data-height="90px" style="transform: rotate(360deg);"><path fill="#F7DF1E" d="M0 0h256v256H0V0Z"></path><path d="m67.312 213.932l19.59-11.856c3.78 6.701 7.218 12.371 15.465 12.371c7.905 0 12.89-3.092 12.89-15.12v-81.798h24.057v82.138c0 24.917-14.606 36.259-35.916 36.259c-19.245 0-30.416-9.967-36.087-21.996m85.07-2.576l19.588-11.341c5.157 8.421 11.859 14.607 23.715 14.607c9.969 0 16.325-4.984 16.325-11.858c0-8.248-6.53-11.17-17.528-15.98l-6.013-2.58c-17.357-7.387-28.87-16.667-28.87-36.257c0-18.044 13.747-31.792 35.228-31.792c15.294 0 26.292 5.328 34.196 19.247l-18.732 12.03c-4.125-7.389-8.591-10.31-15.465-10.31c-7.046 0-11.514 4.468-11.514 10.31c0 7.217 4.468 10.14 14.778 14.608l6.014 2.577c20.45 8.765 31.963 17.7 31.963 37.804c0 21.654-17.012 33.51-39.867 33.51c-22.339 0-36.774-10.654-43.819-24.574"></path></svg>
+                            <span>JavaScript</span>
+                        </li>
+                        <li>
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 255" class="iconify" data-icon="logos:python" data-inline="false" data-width="90px" data-height="90px" style="transform: rotate(360deg);"><defs><linearGradient id="IconifyId-187345a4847-bdbd64-25" x1="12.959%" x2="79.639%" y1="12.039%" y2="78.201%"><stop offset="0%" stop-color="#387EB8"></stop><stop offset="100%" stop-color="#366994"></stop></linearGradient><linearGradient id="IconifyId-187345a4847-bdbd64-26" x1="19.128%" x2="90.742%" y1="20.579%" y2="88.429%"><stop offset="0%" stop-color="#FFE052"></stop><stop offset="100%" stop-color="#FFC331"></stop></linearGradient></defs><path fill="url(#IconifyId-187345a4847-bdbd64-25)" d="M126.916.072c-64.832 0-60.784 28.115-60.784 28.115l.072 29.128h61.868v8.745H41.631S.145 61.355.145 126.77c0 65.417 36.21 63.097 36.21 63.097h21.61v-30.356s-1.165-36.21 35.632-36.21h61.362s34.475.557 34.475-33.319V33.97S194.67.072 126.916.072ZM92.802 19.66a11.12 11.12 0 0 1 11.13 11.13a11.12 11.12 0 0 1-11.13 11.13a11.12 11.12 0 0 1-11.13-11.13a11.12 11.12 0 0 1 11.13-11.13Z"></path><path fill="url(#IconifyId-187345a4847-bdbd64-26)" d="M128.757 254.126c64.832 0 60.784-28.115 60.784-28.115l-.072-29.127H127.6v-8.745h86.441s41.486 4.705 41.486-60.712c0-65.416-36.21-63.096-36.21-63.096h-21.61v30.355s1.165 36.21-35.632 36.21h-61.362s-34.475-.557-34.475 33.32v56.013s-5.235 33.897 62.518 33.897Zm34.114-19.586a11.12 11.12 0 0 1-11.13-11.13a11.12 11.12 0 0 1 11.13-11.131a11.12 11.12 0 0 1 11.13 11.13a11.12 11.12 0 0 1-11.13 11.13Z"></path></svg>
+                            <span>Python</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/ISO_C++_Logo.svg.png" focusable="false" width="50px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 255">
+                            <span>C++</span>
+                        </li>
+                        <li>
+                            <img src="assets/images/photoshop.png" focusable="false" width="60px" height="60px" preserveAspectRatio="xMidYMid meet" viewBox="0 0 256 255">
+                            <span>Photoshop</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
+            <!-- ------------------------------------------------------------------------- -->
+        </section>
+        <section id="projects-section">
+            <div class="projects-container">
+                <div class="projects">
+                    <h2>My <span style="color: var(--accent-color)">Projects</span></h2>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+
+        </section>
+        <section id="footer-section">
+        </section>
+    </main>
 </body>
 </html>
