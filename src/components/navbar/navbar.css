@@ -1,0 +1,49 @@
+@import url('../../index.css');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--nav-color);
+  box-shadow: var(--shadow);
+  z-index: 100;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem; 
+}
+
+.navbar__link,
+.navbar__logo {
+  color: var(--title-color);
+  font-weight: var(--font-semibold);
+  transition: color 0.3s ease-in-out;
+  
+}
+
+.navbar__link:hover {
+  color: var(--link-hover-color);
+}
+
+.navbar__logo {
+  font-size: var(--h3-font-size);
+}
+
+.navbar__logo img {
+  height: 60px;
+  width: auto;
+}
