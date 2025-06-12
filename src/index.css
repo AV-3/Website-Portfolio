@@ -4,15 +4,15 @@
 /* =======CSS Variables======= */
 :root {
   /* =======Color Variables====== (HSL)*/
-  --bg-color: hsl(240, 26%, 13%);
+  --bg-color: hsl(240, 10%, 8%);
   --nav-color: hsl(240, 13%, 9%);
-  --title-color: hsl(179, 178, 178);
-  --text-color: hsl(250, 5%, 76%);
+  --title-color: hsl(0, 0%, 100%);
+  --text-color: hsl(0, 0%, 71%);
   --body-color: hsl(256, 30%, 17%);
-  --container-color: hsl(256, 30%, 17%);
+  --container-color: hsl(256, 34%, 37%);
   --link-color: hsl(200, 100%, 50%);
-  --link-hover-color: hsl(200, 100%, 60%);
-  --button-bg-color: hsl(200, 100%, 50%);
+  --link-hover-color: hsl(46, 75%, 58%);
+  --button-bg-color: hsl(332, 100%, 50%);
   --button-hover-bg-color: hsl(200, 100%, 60%);
   --button-text-color: hsl(0, 0%, 100%);
   --button-hover-text-color: hsl(0, 0%, 95%);
@@ -24,6 +24,7 @@
   --h1-font-size: 2.5rem;
   --h2-font-size: 2rem;
   --h3-font-size: 1.5rem;
+  --navbar-font-size: 1.1rem;
   --normal-font-size: 1rem;
   --small-font-size: 0.875rem;
   --smallest-font-size: 0.75rem;
@@ -48,6 +49,8 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--link-hover-color) var(--bg-color); /* thumb color, track color */
 }
 
 body, button, input, textarea{
