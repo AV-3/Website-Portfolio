@@ -4,7 +4,7 @@
 .hero {
   min-height: 100vh; 
   display: flex;
-  align-items: center;
+  padding: 20vh 1rem 0 1rem;
 }
 
 .hero__container {
@@ -12,29 +12,107 @@
   max-width: 800px;
 }
 
+.hero__greeting {
+  font-size: 0.9rem;
+  font-weight: var(--font-semibold);
+  color: var(--text-color);
+  margin-bottom: 0.5rem;
+}
+
 .hero__title {
-  font-size: 3.5rem;
-  margin-bottom: 2rem;
+  font-size: 3.53rem;
+  margin-bottom: 0.3rem;
   color: var(--title-color); 
 }
 
 .hero__subtitle {
-  font-size: var(--h3-font-size);
+  font-size: 1.5rem;
   font-weight: var(--font-medium);
   margin-bottom: 1rem;
-  color: var(--primary-color);
+  color: var(--link-hover-color);
+}
+
+/* 1. A base class for any text that will have a gradient */
+.text-gradient {
+  /* The magic starts here: Make the background the gradient */
+  background-clip: text;
+  -webkit-background-clip: text; /* For Safari and other WebKit browsers */
+  
+  /* Make the actual text color transparent to show the background gradient */
+  color: transparent;
+
+  /* Fallback color for browsers that don't support background-clip */
+  --color: var(--link-hover-color); 
+}
+
+/* 2. A specific class for each of your subtitles */
+.engineer-text {
+  background-image: linear-gradient(45deg, #43e97b, #38f9d7);
+}
+
+.mscs-text {
+  background-image: linear-gradient(45deg, #f85091, #d538fc);
+}
+
+.veteran-text {
+  background-image: linear-gradient(45deg, #50d1f8, #6d7dd8);
+}
+
+/* Container to hold the rotating subtitle */
+.hero__subtitle-container {
+  /* Give it a fixed height to prevent content jiggle during animation.
+     Adjust this height based on the font size of your subtitle. */
+  min-height: 5rem; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .hero__description {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 2.5rem;
   color: var(--text-color);
   opacity: 0.9;
 }
 
-.hero__btn {
-  padding: 1rem 2rem;
-  font-size: 1.1rem;
+.hero__buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;             
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border-radius: 50px;
+  font-weight: var(--font-semibold);
+  color: var(--bg-color);
+  background-color: var(--link-hover-color);
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  border-color: var(--link-hover-color);
+  border-style: solid;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--link-hover-color);
+  color: var(--link-hover-color);
+}
+
+/* Hover effect for the filled button */
+.btn:hover {
+  transform: translateY(-3px); /* Add a subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Hover effect for the outlined button */
+.btn-outline:hover {
+  background-color: var(--primary-color); /* On hover, fill it in */
+  color: var(--button-text-color);       /* Make the text white again */
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ==================== Tablet & Desktop Styles ====================== */
@@ -45,6 +123,7 @@
 
   .hero__subtitle {
     font-size: 1.5rem;
+    white-space: nowrap;   /* Add this to prevent subtitle from wrapping if it's long */
   }
 
   .hero__description {

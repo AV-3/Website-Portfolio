@@ -26,9 +26,9 @@ const Navbar = () => {
             <ul className={`navbar__menu ${isMenuOpen ? 'is-open' : ''}`}>
             <li className="navbar__item"><a href="#hero" className="navbar__link" onClick={closeMobileMenu}>Home</a></li>
             <li className="navbar__item"><a href="#about" className="navbar__link" onClick={closeMobileMenu}>About</a></li>
+            <li className="navbar__item"><a href="#experience" className="navbar__link" onClick={closeMobileMenu}>Experience</a></li>
             <li className="navbar__item"><a href="#skills" className="navbar__link" onClick={closeMobileMenu}>Skills</a></li>
             <li className="navbar__item"><a href="#projects" className="navbar__link" onClick={closeMobileMenu}>Projects</a></li>
-            <li className="navbar__item"><a href="#experience" className="navbar__link" onClick={closeMobileMenu}>Experience</a></li>
             <li className="navbar__item"><a href="#contact" className="navbar__link" onClick={closeMobileMenu}>Contact</a></li>
             </ul>
         </div>
