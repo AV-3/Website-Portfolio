@@ -7,10 +7,15 @@ const About = () => {
       <div className="about__container">
         <h2 className="about__title">About Me</h2>
         <p className="about__description">
-          I am a passionate software developer with a love for creating innovative solutions. My journey in tech has been driven by curiosity and a desire to make a positive impact through technology.
+          I am a Computer Science graduate and incoming <span className="highlight-gold">Georgia Tech</span> Master's student specializing in Computer Perception, Robotics and AI.
         </p>
         <p className="about__description">
-          With experience in various programming languages and frameworks, I enjoy tackling challenges and continuously learning new skills to enhance my craft.
+          With over 2 years of professional backend software engineering in <span className="highlight-gold">C# and .NET</span>, I'm constantly expanding my skills
+          including <span className="highlight-gold">C++ and Python</span> to create innovative solutions in robotics, computer vision, embedded systems, and AI.
+        </p>
+        <p className="about__description">
+          Before my career in software, I served over 7 years in the <span className="highlight-gold">U.S. Air Force</span>, 
+          where I honed my skills in leadership, teamwork, and problem-solving under pressure.
         </p>
       </div>
     </section>

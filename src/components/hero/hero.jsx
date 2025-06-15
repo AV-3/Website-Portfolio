@@ -45,9 +45,9 @@ const Hero = () => {
               key={subtitles[currentIndex]}
 
               // 2. Animation properties
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
-              exit={{ opacity: 0, y: -20 }}
+              exit={{ opacity: 0, y: 20 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
 
               className={`hero__subtitle text-gradient ${gradientClasses[currentIndex]}`}
@@ -59,7 +59,7 @@ const Hero = () => {
         
         <p className="hero__description">
           with professional experience
-          building solutions on the Microsoft stack (C#, .NET, Azure). Interested in robotics, computer vision, embedded systems, full-stack development and AI.
+          building solutions on the Microsoft stack (C#, .NET, Azure). Interested in robotics, computer vision, AI, embedded systems, and full-stack development.
         </p>
         <div className="hero__buttons">
           <a 
