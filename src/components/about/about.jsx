@@ -1,4 +1,3 @@
-import React from 'react';
 import './about.css';
 
 const About = () => {
@@ -17,6 +16,17 @@ const About = () => {
           Before my career in software, I served over 7 years in the <span className="highlight-gold">U.S. Air Force</span>, 
           where I honed my skills in leadership, teamwork, and problem-solving under pressure.
         </p>
+        <h3 className="about__subtitle">Education</h3>
+        <div className="about__education__container first__education__container">
+          <h3>Georgia Institute of Technology</h3>
+          <p>Master of Science in Computer Science</p>
+          <p>Incoming: 2025</p>
+        </div>
+        <div className="about__education__container">
+          <h2>Western Governors University</h2>
+          <p>Bachelor of Science in Computer Science</p>
+          <p>Graduated: 2025</p>
+        </div>
       </div>
     </section>
   );

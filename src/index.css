@@ -9,7 +9,7 @@
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 71%);
   --body-color: hsl(256, 30%, 17%);
-  --container-color: hsl(256, 34%, 37%);
+  --container-color: hsl(284, 25%, 21%);
   --link-color: hsl(200, 100%, 50%);
   --primary-color: hsl(46, 75%, 58%);
   --secondary-color: hsl(143, 54%, 49%);
@@ -30,6 +30,7 @@
   --small-font-size: 0.875rem;
   --smallest-font-size: 0.75rem;
 
+  --font-normal: 400;
   --font-medium: 500;
   --font-semibold: 600;
   --font-bold: 700;
