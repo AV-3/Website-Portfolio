@@ -1,4 +1,3 @@
-import React from 'react';
 import './App.css';
 import About from './components/about/about';
 import Contact from './components/contact/contact';
