@@ -47,8 +47,8 @@ const Experience = () => {
                 </div>
                 <div className="experience__job__container">
                     <ul className="experience__job__list">
+                        <h3 className="experience__job__company">United States Air Force</h3>
                         <li className="experience__job__item">
-                            <h3 className="experience__job__company">United States Air Force</h3>
                             <h3 className="experience__job__title">Logistics Supervisor, Non-Commissioned Officer</h3>
                             <p className="experience__job__duration">Apr 2020 - Sep 2022</p>
                             <ul className="experience__job__project__list">
