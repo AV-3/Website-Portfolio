@@ -66,20 +66,29 @@
     
 }
 
-.about__education__container h1, h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.3rem;
-    font-weight: var(--font-semibold);
-}
-
 .about__education__container h3 {
-    font-size: 1.2rem;
+    font-size: 1.22rem;
     margin-bottom: 0.5rem;
     font-weight: var(--font-semibold);
 }
 
+.about__education__container h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-semibold);
+}
+
+.about__education__container h5 {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    font-weight: var(--font-normal);
+}
+
 .about__education__container p {
+    font-size: 1.1rem;
     margin: 0.2rem 0;
+    color: var(--primary-color);
+    font-weight: var(--font-normal);
 }
 
 @media (min-width: 768px) {
