@@ -1,5 +1,6 @@
-import React from 'react';
 import './contact.css';
+import emailIcon from '../../assets/Mail_(iOS).svg.png';
+import githubIcon from '../../assets/images.png';
 
 const Contact = () => {
   return (
@@ -7,14 +8,25 @@ const Contact = () => {
       <div className="contact__container">
         <h2 className="contact__title">Get in Touch</h2>
         <p className="contact__description">
-          I would love to hear from you! Whether you have a question, want to collaborate, or just want to say hello, feel free to reach out.
+          I'm currently looking for new opportunities and would love to hear from you! Feel free to reach out.
         </p>
-        <form className="contact__form">
-          <input type="text" placeholder="Your Name" required className="contact__input" />
-          <input type="email" placeholder="Your Email" required className="contact__input" />
-          <textarea placeholder="Your Message" required className="contact__textarea"></textarea>
-          <button type="submit" className="contact__button">Send Message</button>
-        </form>
+        <ul className="contact__socials__list">
+          <li className="contact__socials__item">
+            <a href="https://www.linkedin.com/in/alan-velez-e/">
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linkedin/linkedin-original.svg" alt="LinkedIn Link"></img>
+            </a>
+          </li>
+          <li className="contact__socials__item">
+            <a href="https://github.com//AV-3">
+              <img src={githubIcon} alt="Github Link"></img>
+            </a>
+          </li>
+          <li className="contact__socials__item">
+            <a href="mailto:alan.velez.e@gmail.com">
+              <img src={emailIcon} alt="Email Link"></img>
+            </a>
+          </li>
+        </ul>
       </div>
     </section>
   );

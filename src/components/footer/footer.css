@@ -1,0 +1,36 @@
+@import url('../../index.css');
+
+/*=================== Mobile Navbar Styles ===================*/
+.footer {
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--nav-color);
+    box-shadow: var(--shadow);
+}
+
+.footer::after{
+    background-color: var(--primary-color);
+}
+
+.footer__container {
+    text-align: center;
+    align-items: center;
+    height: 5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px;
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+    font-weight: var(--font-semibold);
+    transition: color 0.3s ease-in-out;
+}
+
+.footer__container a{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.footer__copyright {
+    padding: 4px;
+    font-weight: var(--font-normal);
+}

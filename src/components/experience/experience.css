@@ -1,5 +1,7 @@
 @import url('../../index.css');
 
+/*=================== Mobile Navbar Styles ===================*/
+
 .experience {
     min-height: 100vh; 
     display: flex;

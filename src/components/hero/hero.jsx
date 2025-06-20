@@ -62,14 +62,9 @@ const Hero = () => {
           building solutions on the Microsoft stack (C#, .NET, Azure). Interested in robotics, computer vision, AI, embedded systems, and full-stack development.
         </p>
         <div className="hero__buttons">
-          <a 
-            href="/Spring 2025 Resume Alan Velez.pdf"
-            download="Spring 2025 Resume Alan Velez.pdf"
-            className="btn btn-outline"
-          >
-            Download Resume
+          <a href="#contact" className="btn btn-outline">
+            Contact Me
           </a>
-
           <a href="#about" className="btn">
             Learn More
           </a>

@@ -1,5 +1,7 @@
 @import url('../../index.css');
 
+/*=================== Mobile Navbar Styles ===================*/
+
 .about {
     min-height: 120vh; 
     display: flex;
