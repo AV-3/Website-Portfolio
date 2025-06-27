@@ -3,17 +3,17 @@
   "name": "Alan Velez Website Portfolio",
   "icons": [
     {
-      "src": "av-high-resolution-logo-color-on-transparent-background.png",
+      "src": "%PUBLIC_URL%/av-high-resolution-logo-color-on-transparent-background.png",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/png"
     },
     {
-      "src": "av-high-resolution-logo-color-on-transparent-background.png",
+      "src": "%PUBLIC_URL%/av-high-resolution-logo-color-on-transparent-background.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "av-high-resolution-logo-color-on-transparent-background.png",
+      "src": "%PUBLIC_URL%/av-high-resolution-logo-color-on-transparent-background.png",
       "type": "image/png",
       "sizes": "512x512"
     }
