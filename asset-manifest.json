@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Website-Portfolio/static/css/main.d09cd35a.css",
+    "main.css": "/Website-Portfolio/static/css/main.199a25ea.css",
     "main.js": "/Website-Portfolio/static/js/main.bfdb5957.js",
     "static/js/453.5a536778.chunk.js": "/Website-Portfolio/static/js/453.5a536778.chunk.js",
     "static/media/stars-less-exposed.jpg": "/Website-Portfolio/static/media/stars-less-exposed.e3141c6be8ad90274c50.jpg",
@@ -10,12 +10,12 @@
     "static/media/SNOW-35164165.png": "/Website-Portfolio/static/media/SNOW-35164165.78faf64243c21868b542.png",
     "static/media/Georgia-Tech-Logo-PNG-Photos.png": "/Website-Portfolio/static/media/Georgia-Tech-Logo-PNG-Photos.e0906b68ab85192f73c0.png",
     "index.html": "/Website-Portfolio/index.html",
-    "main.d09cd35a.css.map": "/Website-Portfolio/static/css/main.d09cd35a.css.map",
+    "main.199a25ea.css.map": "/Website-Portfolio/static/css/main.199a25ea.css.map",
     "main.bfdb5957.js.map": "/Website-Portfolio/static/js/main.bfdb5957.js.map",
     "453.5a536778.chunk.js.map": "/Website-Portfolio/static/js/453.5a536778.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.d09cd35a.css",
+    "static/css/main.199a25ea.css",
     "static/js/main.bfdb5957.js"
   ]
 }
