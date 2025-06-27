@@ -60,8 +60,8 @@ const Hero = () => {
         <p className="hero__description">
           with professional experience
           building solutions on the Microsoft stack (C#, .NET, Azure). Now specializing in 
-          Computational Perception and Robotics at <a href="https://www.gatech.edu/" target="_blank" rel="noreferrer" className="hero__highlight__gold">Georgia Institute of Technology </a>
-          to develop high-performing intelligent systems.
+          Computational Perception and Robotics at <a href="https://www.gatech.edu/" target="_blank" rel="noreferrer" className="hero__highlight__gold">Georgia Institute of Technology</a>
+          <span> </span> to develop high-performing intelligent systems.
         </p>
         <div className="hero__buttons">
           <a href="#contact" className="btn btn-outline">

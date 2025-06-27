@@ -6,19 +6,18 @@ const About = () => {
       <div className="about__container">
         <h2 className="about__title">About Me</h2>
         <p className="about__description">
-          A <span className="highlight-gold">Georgia Tech</span> graduate student 
-          pursuing a M.S. in Computer Science with a specialization in Computational Perception and Robotics.
-          Targeting a career in creating the intelligent systems that 
-          power autonomous vehicles, drones, and advanced robotics.
+          Hi! I'm a <span className="highlight-gold">Georgia Tech</span> MSCS student specializing in Computational Perception and Robotics. 
+          My focus is on creating the intelligent systems that enable autonomous vehicles, drones, and robots to see and think.
         </p>
         <p className="about__description">
-          My studies build upon a foundational two years as a professional software engineer, developing robust and scalable Azure backend services with
-          <span className="highlight-gold"> C# and the .NET framework.</span> Now, my career focus is on bridging the gap between software and the physical world using <span className="highlight-gold">C++ and Python</span>. 
+          My professional experience is in backend development, where I spent two years building scalable backend services with
+          <span className="highlight-gold"> C# and .NET on the Azure cloud.</span> Now, my career focus is on bridging the gap between software and the physical 
+          world using <span className="highlight-gold">C++, Python, and Artificial Intelligence</span>. 
 
         </p>
         <p className="about__description">
-          Before my career in software, I served over 7 years in the <span className="highlight-gold">U.S. Air Force</span> managing the logistics for aviation fuel and cryogenics. 
-          There I honed my skills in leadership, teamwork, and problem-solving in high-stress scenarios.
+          Before my tech career, I served almost 8 years in the <span className="highlight-gold">U.S. Air Force</span> managing the logistics for aviation fuel and cryogenics. 
+          That experience developed my skills in leadership, teamwork, and high-stakes problem-solving.
         </p>
         <h2 className="about__subtitle">Education</h2>
         <div className="about__education__container first__education__container">
