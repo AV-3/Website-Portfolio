@@ -75,9 +75,9 @@
     box-shadow: 0px 0px 50px var(--primary-color);
     transition: ease-in-out 0.1s;
     background-image: url(../../assets/Seal_of_WGU.svg.png);
-    background-size:contain;
+    background-size: 75px;
     background-repeat: no-repeat;
-    background-position: center left;
+    background-position: bottom right;
     overflow: hidden;
 }
 
@@ -87,6 +87,7 @@
 
 .first__education__container:hover{
     background-image: url(../../assets/Georgia-Tech-Logo-PNG-Photos.png);
+    background-size: 90px;
 }
 
 .about__education__container h3 {
@@ -115,5 +116,17 @@
 }
 
 @media (min-width: 768px) {
+    .about__education__container:hover{
+    box-shadow: 0px 0px 50px var(--primary-color);
+    transition: ease-in-out 0.1s;
+    background-image: url(../../assets/Seal_of_WGU.svg.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center left;
+    overflow: hidden;
+}
 
+    .first__education__container:hover{
+    background-image: url(../../assets/Georgia-Tech-Logo-PNG-Photos.png);
+}
 }

@@ -64,12 +64,12 @@ const Hero = () => {
           to develop high-performing intelligent systems.
         </p>
         <div className="hero__buttons">
-          <button href="#contact" className="btn btn-outline">
+          <a href="#contact" className="btn btn-outline">
             Contact Me
-          </button>
-          <button href="#about" className="btn">
+          </a>
+          <a href="#about" className="btn">
             Learn More
-          </button>
+          </a>
         </div>
       </div>
     </section>

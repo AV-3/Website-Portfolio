@@ -67,6 +67,8 @@
 
 .hero__highlight__gold {
     color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
 }
 
 .hero__highlight__gold:hover{
