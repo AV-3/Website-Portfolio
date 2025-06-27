@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Website-Portfolio/static/css/main.2444b637.css",
+    "main.js": "/Website-Portfolio/static/js/main.b563e931.js",
+    "static/js/453.5a536778.chunk.js": "/Website-Portfolio/static/js/453.5a536778.chunk.js",
+    "static/media/stars-less-exposed.jpg": "/Website-Portfolio/static/media/stars-less-exposed.e3141c6be8ad90274c50.jpg",
+    "static/media/av-high-resolution-logo-color-on-transparent-background.png": "/Website-Portfolio/static/media/av-high-resolution-logo-color-on-transparent-background.ed9440701b4911286893.png",
+    "static/media/Mail_(iOS).svg.png": "/Website-Portfolio/static/media/Mail_(iOS).svg.74b4e40277774e3b7d27.png",
+    "static/media/Seal_of_WGU.svg.png": "/Website-Portfolio/static/media/Seal_of_WGU.svg.7bdfe8f7d4fb72d156bc.png",
+    "static/media/SNOW-35164165.png": "/Website-Portfolio/static/media/SNOW-35164165.78faf64243c21868b542.png",
+    "static/media/Georgia-Tech-Logo-PNG-Photos.png": "/Website-Portfolio/static/media/Georgia-Tech-Logo-PNG-Photos.e0906b68ab85192f73c0.png",
+    "index.html": "/Website-Portfolio/index.html",
+    "main.2444b637.css.map": "/Website-Portfolio/static/css/main.2444b637.css.map",
+    "main.b563e931.js.map": "/Website-Portfolio/static/js/main.b563e931.js.map",
+    "453.5a536778.chunk.js.map": "/Website-Portfolio/static/js/453.5a536778.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2444b637.css",
+    "static/js/main.b563e931.js"
+  ]
+}
