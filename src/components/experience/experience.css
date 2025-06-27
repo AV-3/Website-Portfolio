@@ -5,10 +5,15 @@
 .experience {
     min-height: 100vh; 
     display: flex;
-    padding: 10vh 1rem 0 1rem;
+    justify-content: center;
+    padding-top: 10vh;
+    padding-left: 3vh;
+    padding-right: 3vh;
+    padding-bottom: 10vh;
 }
 
 .experience__container {
+    display: flex;
     text-align: center;
     max-width: 800px;
     flex-direction:column;
@@ -31,6 +36,11 @@
     text-underline-offset: 19px;
 }
 
+.experience__title:first-child{
+    text-decoration: none;
+    margin-bottom: -0.4rem;
+}
+
 .experience__job__container {
     display: flex;
     flex-direction: column;
@@ -39,10 +49,7 @@
     line-height: 1.5;
     color: var(--text-color);
     margin-top: 1rem;
-    margin-bottom: 3rem;
-    background-image: linear-gradient(-45deg, #254357, #382c64);
     border-radius: 8px;
-    padding: 1rem;
 }
 
 .experience__job__list {
@@ -102,6 +109,9 @@
 .experience__job__project__list li{
     margin-bottom: 0.7rem;
 }
+
 @media (min-width: 768px) {
-    
+    .experience__job__container{
+        box-shadow: 0px 0px 30px var(--primary-color);
+    }
 }

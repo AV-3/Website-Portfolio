@@ -5,10 +5,11 @@
 :root {
   /* =======Color Variables====== (HSL)*/
   --bg-color: hsl(240, 13%, 8%);
+  --secondary-bg-color: hsl(240, 13%, 15%);
   --nav-color: hsl(240, 13%, 10%);
   --title-color: hsl(0, 0%, 100%);
   --text-color: hsl(0, 0%, 71%);
-  --body-color: hsl(256, 30%, 17%);
+  --text-hover-color: rgb(223, 49, 145);
   --container-color: hsl(284, 25%, 21%);
   --link-color: hsl(200, 100%, 50%);
   --primary-color: hsl(46, 75%, 58%);
@@ -148,10 +149,6 @@ img{
   100% {
     transform: scale(1);
   }
-}
-
-.btn:hover {
-  animation: button-push 0.3s ease-in-out;
 }
 
 /* =======Media Queries======= */

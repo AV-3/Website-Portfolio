@@ -58,11 +58,20 @@
 }
 
 .hero__description {
-  font-size: 1rem;
-  margin-bottom: 2.5rem;
+  font-size: 0.9rem;
+  margin-bottom: 1.2rem;
   color: var(--text-color);
   opacity: 0.9;
   margin-top: 0.3rem;
+}
+
+.hero__highlight__gold {
+    color: var(--primary-color);
+}
+
+.hero__highlight__gold:hover{
+  color: var(--text-hover-color);
+  transition: all 0.2s ease-in-out;
 }
 
 .hero__buttons {
@@ -80,9 +89,11 @@
   color: var(--bg-color);
   background-color: var(--primary-color);
   text-align: center;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in;
+  border: 3px solid var(--primary-color);
   border-color: var(--primary-color);
   border-style: solid;
+  text-decoration: none;
 }
 
 .btn-outline {
@@ -92,37 +103,47 @@
 }
 
 .btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px hsla(256, 30%, 17%, 0.4);
+  color: var(--title-color);
 }
 
 .btn-outline:hover {
   background-color: var(--primary-color);
-  color: var(--button-text-color);
-  transform: translateY(-3px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* ==================== Tablet & Desktop Styles ====================== */
 @media (min-width: 768px) {
+  .hero {
+    background-image: url(../../assets/stars-less-exposed.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    overflow: hidden;
+  }
+
   .hero__title {
     font-size: 6.5rem;
   }
 
+  .hero__greeting {
+    font-size: 1rem;
+  }
+
   .hero__subtitle {
-    font-size: 1.5rem;
+    font-size: 2.3rem;
     white-space: nowrap;   /* Add this to prevent subtitle from wrapping if it's long */
   }
 
   .hero__description {
-    font-size: 1.1rem;
-    max-width: 650px; 
+    font-size: 1.25rem;
+    max-width: 750px; 
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2.5rem;
   }
 
-  .hero__btn {
+  .btn {
     padding: 1rem 2rem;
     font-size: 1.1rem;
   }

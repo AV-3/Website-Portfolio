@@ -5,12 +5,13 @@ const Experience = () => {
     return (
         <section className="experience" id="experience">
             <div className="experience__container">
-                <h2 className="experience__title">My Experience</h2>
+                <h2 className="experience__title">Relevant</h2>
+                <h2 className="experience__title">Experience</h2>
                 <div className="experience__job__container">
                     <ul className="experience__job__list">
                         <h3 className="experience__job__company">Excelsior Equity Partners</h3>
                         <p className="experience__job__description">
-                            At Excelsior, I led the creation of critical business processes from the ground up.
+                            At Excelsior, I created a wide range of solutions to enable critical business processes for our analyst and legal team.
                         </p>
                         <li className="experience__job__item">
                             <h3 className="experience__job__title">Junior Software Engineer</h3>
@@ -18,7 +19,7 @@ const Experience = () => {
                             <ul className="experience__job__project__list">
                                 <li>Designed and built various Microsoft Playwright RPAs. Including a console app capable of filing thousands of 
                                     lawsuits through the government owned PACER website, hosted on multiple virtual machines.</li>
-                                <li>Created an Azure Function App that extracts crucial data points from client documents used by our legal team
+                                <li>Created an Azure Function App that extracts crucial data from client documents used by our legal team
                                     to identify and build high profile cases.</li>
                                 <li>Built multiple Azure Data Factory pipelines to move data from Azure blob storage to Snowflake to enable our analyst
                                     team to perform data analysis and create reports for the legal team.</li>
@@ -45,7 +46,7 @@ const Experience = () => {
                         </li>
                     </ul>
                 </div>
-                <div className="experience__job__container">
+                {/*<div className="experience__job__container">
                     <ul className="experience__job__list">
                         <h3 className="experience__job__company">United States Air Force</h3>
                         <li className="experience__job__item">
@@ -66,7 +67,7 @@ const Experience = () => {
                             </p>
                         </li>
                     </ul>
-                </div>
+                </div>*/}
             </div>
         </section>
         );

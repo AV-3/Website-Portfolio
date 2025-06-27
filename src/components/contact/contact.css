@@ -2,9 +2,12 @@
 
 /*=================== Mobile Navbar Styles ===================*/
 .contact {
-  min-height: 100vh; 
+  min-height: 50vh; 
   display: flex;
-  padding: 20vh 1rem 0 1rem;
+  padding: 15vh 1rem 0 1rem;
+  justify-content: center;
+  background-color: var(--secondary-bg-color);
+
 }
 
 .contact__container {
@@ -38,4 +41,16 @@
     padding: 1rem;
     height: 100px;
     width: 100px;
+}
+
+.contact__socials__item:hover {
+    transform:scale(1.2);
+    transform:rotate(360deg) scale(1.5);
+    transition: ease 0.4s;
+}
+
+@media (min-width: 768px){
+  .contact{
+      min-height: 60vh;
+  }
 }

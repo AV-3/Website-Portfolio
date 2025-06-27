@@ -26,7 +26,7 @@ const Hero = () => {
     };
 
     // Set up an interval to rotate subtitles every 3 seconds (3000 milliseconds)
-    const intervalId = setInterval(rotateSubtitles, 3000);
+    const intervalId = setInterval(rotateSubtitles, 2000);
 
     // IMPORTANT: Clean up the interval when the component unmounts
     return () => clearInterval(intervalId);
@@ -59,15 +59,17 @@ const Hero = () => {
         
         <p className="hero__description">
           with professional experience
-          building solutions on the Microsoft stack (C#, .NET, Azure). Interested in robotics, computer vision, AI, embedded systems, and full-stack development.
+          building solutions on the Microsoft stack (C#, .NET, Azure). Now specializing in 
+          Computational Perception and Robotics at <a href="https://www.gatech.edu/" target="_blank" className="hero__highlight__gold">Georgia Institute of Technology </a>
+          to develop high-performing intelligent systems.
         </p>
         <div className="hero__buttons">
-          <a href="#contact" className="btn btn-outline">
+          <button href="#contact" className="btn btn-outline">
             Contact Me
-          </a>
-          <a href="#about" className="btn">
+          </button>
+          <button href="#about" className="btn">
             Learn More
-          </a>
+          </button>
         </div>
       </div>
     </section>
