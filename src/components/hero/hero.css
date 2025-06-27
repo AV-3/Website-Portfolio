@@ -4,7 +4,7 @@
 .hero {
   min-height: 100vh; 
   display: flex;
-  padding: 20vh 1rem 0 1rem;
+  padding: 20vh 1rem 4rem 1rem;
 }
 
 .hero__container {
